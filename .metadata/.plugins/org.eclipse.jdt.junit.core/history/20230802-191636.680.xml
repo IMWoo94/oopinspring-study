@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="CarTest" project="ExpertSpring30" tests="1" started="1" failures="0" errors="0" ignored="0">
+  <testsuite name="expert001_01.CarTest" time="0.006">
+    <testcase name="자동차_장착_타이어브랜드_테스트" classname="expert001_01.CarTest" time="0.006"/>
+  </testsuite>
+</testrun>

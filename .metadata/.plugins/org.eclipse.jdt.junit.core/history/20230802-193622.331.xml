@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="CarTest (4)" project="ExpertSpring30" tests="1" started="1" failures="0" errors="1" ignored="0">
+  <testsuite name="expert003.CarTest" time="0.001">
+    <testcase name="initializationError" classname="expert003.CarTest" time="0.0">
+      <error>java.lang.IllegalStateException: Could not load CacheAwareContextLoaderDelegate [class org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate]&#13;
+	at org.springframework.test.context.BootstrapUtils.createCacheAwareContextLoaderDelegate(BootstrapUtils.java:103)&#13;
+	at org.springframework.test.context.BootstrapUtils.createBootstrapContext(BootstrapUtils.java:72)&#13;
+	at org.springframework.test.context.TestContextManager.&lt;init&gt;(TestContextManager.java:124)&#13;
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTestContextManager(SpringJUnit4ClassRunner.java:151)&#13;
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.&lt;init&gt;(SpringJUnit4ClassRunner.java:142)&#13;
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)&#13;
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)&#13;
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)&#13;
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)&#13;
+	at org.junit.internal.builders.AnnotatedBuilder.buildRunner(AnnotatedBuilder.java:104)&#13;
+	at org.junit.internal.builders.AnnotatedBuilder.runnerForClass(AnnotatedBuilder.java:86)&#13;
+	at org.junit.runners.model.RunnerBuilder.safeRunnerForClass(RunnerBuilder.java:70)&#13;
+	at org.junit.internal.builders.AllDefaultPossibilitiesBuilder.runnerForClass(AllDefaultPossibilitiesBuilder.java:37)&#13;
+	at org.junit.runners.model.RunnerBuilder.safeRunnerForClass(RunnerBuilder.java:70)&#13;
+	at org.junit.internal.requests.ClassRequest.createRunner(ClassRequest.java:28)&#13;
+	at org.junit.internal.requests.MemoizingRequest.getRunner(MemoizingRequest.java:19)&#13;
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestLoader.createUnfilteredTest(JUnit4TestLoader.java:90)&#13;
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestLoader.createTest(JUnit4TestLoader.java:76)&#13;
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestLoader.loadTests(JUnit4TestLoader.java:49)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:513)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:756)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:452)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:210)&#13;
+Caused by: java.lang.NoClassDefFoundError: org/springframework/core/SpringProperties&#13;
+	at org.springframework.test.context.cache.ContextCacheUtils.retrieveMaxCacheSize(ContextCacheUtils.java:41)&#13;
+	at org.springframework.test.context.cache.DefaultContextCache.&lt;init&gt;(DefaultContextCache.java:90)&#13;
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.&lt;clinit&gt;(DefaultCacheAwareContextLoaderDelegate.java:49)&#13;
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)&#13;
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)&#13;
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)&#13;
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)&#13;
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:147)&#13;
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:104)&#13;
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:129)&#13;
+	at org.springframework.test.context.BootstrapUtils.createCacheAwareContextLoaderDelegate(BootstrapUtils.java:100)&#13;
+	... 22 more&#13;
+Caused by: java.lang.ClassNotFoundException: org.springframework.core.SpringProperties&#13;
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:581)&#13;
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:178)&#13;
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:521)&#13;
+	... 33 more&#13;
+&#13;
+</error>
+    </testcase>
+  </testsuite>
+</testrun>
